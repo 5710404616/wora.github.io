@@ -1,0 +1,53 @@
+body{
+	margin-top: 50px;
+	/*color: white;*/
+	font-weight: bold;
+	background: url(http://www.weekendhobby.com/Tripreport/thumnails/201531093221.jpg) no-repeat center center fixed;
+	/*background: url(http://www.dhammajak.net/board/files/147_758.jpg) no-repeat center center fixed;*/
+	background-size: cover;
+
+}
+form.name{
+	color: white;
+}
+input[type=text], select {
+    /*width: 100%;*/
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button.button {
+    /*width: 25%;*/
+    background-color: #00CDCD;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button.button:hover {
+    background-color: #008B8B;
+}
+
+
+div.form1 {
+
+	width:500px;
+	height:440px;
+	margin: auto;
+    border-radius: 15px;
+    background-color: rgba(105, 105, 105, 0.5);
+    padding: 30px;
+}
+
+div.button {
+	margin-top: 20px;
+	margin-left: 150px; 
+}
+

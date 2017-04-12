@@ -1,0 +1,195 @@
+/* css Zen Garden default style v1.02 */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+
+/* This file based on 'Tranquille' by Dave Shea */
+/* You may use this file as a foundation for any new work, but you may find it easier to start from scratch. */
+/* Not all elements are defined in this file, so you'll most likely want to refer to the xhtml as well. */
+
+/* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
+
+
+/* basic elements */
+html {
+	margin: 0;
+	padding: 0;
+	}
+body { 
+	font: 75% georgia, sans-serif;
+	line-height: 1.88889;
+	color: #D2B48C; 
+	background: #fff url(https://static.vecteezy.com/system/resources/previews/000/098/167/non_2x/zen-garden-sand-vector.jpg) no-repeat center center fixed; 
+	background-size: cover;
+
+	margin: 0; 
+	padding: 0;
+	}
+p { 
+	margin-top: 0; 
+	text-align: justify;
+	}
+h3 { 
+	font: italic normal 1.4em georgia, sans-serif;
+	letter-spacing: 1px; 
+	margin-bottom: 0; 
+	color: #FFA500;
+	}
+a:link { 
+	font-weight: bold; 
+	text-decoration: none; 
+	color: #B7A5DF;
+	}
+a:visited { 
+	font-weight: bold; 
+	text-decoration: none; 
+	color: #D4CDDC;
+	}
+a:hover, a:focus, a:active { 
+	text-decoration: underline; 
+	color: #9685BA;
+	}
+abbr {
+	border-bottom: none;
+	}
+
+
+/* specific divs */
+.page-wrapper { 
+	background: rgba(34,34,34,0.75); 
+	border-radius: 10px;
+	padding: 0 175px 0 110px;  
+	margin: 100px;
+	position: relative;
+	}
+
+.intro { 
+	margin-left: 140px;
+	min-width: 470px;
+	width: 100%;
+	}
+
+header h1 { 
+	font: italic normal 4.4em georgia, sans-serif;
+	font-weight: bolder;
+	color: #FFA500;
+	margin-top: 60px;
+	margin-left: 210px;
+	display: block;
+	float: left;
+	}
+header h2 { 
+	font: italic normal 1.1em georgia, sans-serif;
+	font-weight: normal;
+	color: #FFA500;
+	margin-top: 147px; 
+	margin-bottom: 40px; 
+	float: bottom;
+	}
+header {
+
+	padding-top: 20px;
+	height: 187px;
+}
+
+.summary {
+	margin: 0px 20px 40px 20px; 
+
+	}
+.summary p {
+	font: italic 1.5em georgia; 
+	text-align: center;
+	}
+
+.preamble {
+	clear: right; 
+	border-radius: 5px;
+	padding: 0px 10px 0 10px;
+
+	}
+.supporting {	
+	padding-left: 10px; 
+	margin-bottom: 80px;
+	}
+
+#zen-supporting{
+	margin-left: 140px;
+	padding: 10px;
+	border-radius: 5px;
+	min-width: 470px;
+	width: 100%;
+	}
+
+/*.explanation {
+		margin-left: 200px;
+	}*/
+
+
+footer { 
+	background: rgba(30, 30, 30,1);
+	border-radius: 5px;
+	text-align: right; 
+	width: 100%;
+	}
+footer a:link, footer a:visited { 
+	margin-left: 20px; 
+	}
+
+.sidebar {
+	background: rgba(30, 30, 30,1);
+	border-radius: 10px;
+	position: absolute; 
+	top: 230px; 
+	left: 30px;
+	}
+.sidebar .wrapper { 
+	font: 10px verdana, sans-serif; 
+	padding: 10px; 
+	width: 130px; 
+	}
+
+.sidebar h3 { 
+	margin: 25px 0 5px 0; 
+	}
+
+.sidebar ul {
+	color: #F5DEB3;
+	margin: 10px,10px, 20px,10px;
+	padding: 0;
+	}
+
+.sidebar li {
+	line-height: 1.5em; 
+	display: block; 
+	padding-top: 5px; 
+	margin-bottom: 5px;
+	list-style-type: none;
+	}
+
+.sidebar li a:link {
+	color: #988F5E;
+	}
+.sidebar li a:visited {
+	color: #B3AE94;
+	}
+
+
+.extra1 {
+	background: transparent url(https://f.ptcdn.info/297/031/000/1431440972-01202a-o.png) top left no-repeat; 
+	position: absolute; 
+	top: 120px; 
+	left : 140px; 
+	width: 200px; 
+	height: 187px;
+	}
+
+/*.extra2 {
+	background: transparent url(http://www.buddhadasa.org/images/word/poem/053-touku.gif) top left no-repeat; 
+	border-radius: 10px;
+	border-radius: 5px;
+	position: absolute; 
+	top: 1500px; 
+	left : 500px; 
+	width: 386px; 
+	height: 300px;
+	}*/
+
+	

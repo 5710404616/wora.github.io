@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Input Forms(fill data)</title>
+	<link rel="stylesheet" media="screen" href="style1.css">
+
+</head>
+<body>
+
+<div class="Forms">
+	<form  id="mForm" name="mainForm" action="display.html" method="post">
+		<h3>Register Example</h3>
+		<div>
+		<br><br>
+			Firstname: <input id="Firstname" type="text" name="fname" placeholder="Firstname" onkeyup="setFName(this)" required>
+		<br><br>
+			Lastname: <input id="Lastname" type="text" name="lname" placeholder="Lastname" onkeyup="setLName(this)" required>
+		</div>
+		<br><br>
+
+		<div class="Address">
+			Address: 
+				<br>
+				House number: <input type="text" name="houseNum" oninput="setHouseNum(this)">
+				Street: <input type="text" name="street" oninput="setStreet(this)">
+				City: <input type="text" name="city" oninput="setCity(this)">
+				Province: <input type="text" name="province" oninput="setProvince(this)">
+				Zipcode: <input type="text" name="zipcode" oninput="setZip(this)">
+		</div>	
+		<br><br>
+
+		<div>
+			<!-- <form id="phoneForm" name="cellPhoneForm" method="post" action=""> -->
+  			Phone number:	<input type="tel" name="phoneNum" value="+662-" placeholder="+662-xxx-xxx" onkeyup="phonePattern(this)" oninput="setPhone(this)">
+  			<!-- </form> -->
+		<!-- <br><br>	 -->
+			<!-- <form id="cellPhoneForm" name="cellPhoneForm" method="post" action=""> -->
+  			Cell phone number: <input type="text" name="cellPhoneNum" value="+66" placeholder="+66xx-xxx-xxxx" onkeyup="cellPhonePattern(this)" oninput="setCellPhone(this)">
+  			<!-- </form> -->
+	    <br><br>
+	    	<!-- <form> -->
+	    	Birthday: <input id="birthday-" type="date" name="bday" oninput="setBirthDay(this)"> 
+	    	<!-- </form> --> 			
+ 		<br><br>
+ 			 <!-- <form id="CitizForm" name="form1" method="post" action=""> -->
+			Citizenship number: <input name="cNum" type="text" placeholder="x-xxxx-xxxxx-x-xx" onkeyup="citizPattern(this)" oninput="setId(this)" required>
+  			<!-- </form> -->
+  		</div>	 
+ 		<br><br>
+
+ 		<div>
+ 			Zodiac Sign:
+ 			<select name="zodiacSign" oninput="setSign(this)">
+ 				<option value="Aries" selected>Aries</option>
+    			<option value="Taurus">Taurus</option>
+   				<option value="Gemini">Gemini</option>
+  				<option value="Cancer">Cancer</option> 
+
+  				<option value="Leo">Leo</option>
+   				<option value="Virgo">Virgo</option>
+  				<option value="Libra">Libra</option>
+  				<option value="Scorpio">Scorpio</option>
+
+   				<option value="Sagittarius">Sagittarius</option>
+  				<option value="Capricorn">Capricorn</option>
+  				<option value="Aquarius">Aquarius</option>
+   				<option value="Pisces">Pisces</option>					  
+ 			</select>	
+
+ 		<br><br>
+ 		    Zodiac Year:
+ 			<select name="zodiacYear" oninput="setYear(this)">
+ 				<option value="Rat" selected>Rat</option>
+    			<option value="Ox">Ox</option>
+   				<option value="Tiger">Tiger</option>
+  				<option value="Rabbit">Rabbit</option> 
+
+  				<option value="Dragon">Dragon</option>
+   			    <option value="Snake">Snake</option>
+  				<option value="Horse">Horse</option>
+  				<option value="Goat">Goat</option>
+
+   				<option value="Monkey">Monkey</option>
+  				<option value="Rooster">Rooster</option>
+  				<option value="Dog">Dog</option>
+   				<option value="Pig">Pig</option>					  
+ 			</select>
+
+		<br><br>
+			Birth Day of Week: 			
+			<select name="bWeek" oninput="setBirthWeek(this)">
+ 				<option value="Monday">Monday</option>
+    			<option value="Tuesday">Tuesday</option>
+   				<option value="Wednesday">Wednesday</option>
+  				<option value="Thursday">Thursday</option> 
+
+  				<option value="Friday">Friday</option>
+   				<option value="Saturday">Saturday</option>
+  				<option value="Sunday" selected>Sunday</option>		  
+ 			</select> 
+ 		</div>
+
+		<br><br>
+
+		<div id="button">
+		<input type="button" value="Save" onclick="storeValues(this)" >
+		<input type="reset" name="Cancel">
+		<input type="submit" name="Submit" onclick="notice(this)">
+		</div>
+
+</form>
+</div>
+
+<script src="dataScript.js"></script>
+<script src="fillPatterScript.js"></script>
+<script src="cookieScript.js"></script>
+<script type="text/javascript">
+		if(fname = getCookie("Firstname")) document.mainForm.fname.value = fname;
+	    if(lname = getCookie("Lastname"))document.mainForm.lname.value = lname;
+
+	    if(houseNum = getCookie("House number"))document.mainForm.houseNum.value = houseNum;
+	    if(street =  getCookie("Street"))document.mainForm.street.value = street;
+	    if(city = getCookie("City"))document.mainForm.city.value = city;
+	    if(province =  getCookie("Province"))document.mainForm.province.value = province;
+	    if(zipcode =  getCookie("Zipcode"))document.mainForm.zipcode.value = zipcode;
+
+	    if(phoneNum =  getCookie("phone number"))document.mainForm.phoneNum.value = phoneNum;
+	    if(cellPhoneNum =  getCookie("cell Phone number"))document.mainForm.cellPhoneNum.value = cellPhoneNum;
+	    if(bday = getCookie("Birthday"))document.mainForm.bday.value bday; 
+	    if(cNum = getCookie("Citizenship number"))document.mainForm.cNum.value = cNum;
+
+	    if(zodiacSign =  getCookie("zodiac Sign"))document.mainForm.zodiacSign.value = zodiacSign;
+	    if(zodiacYear =  getCookie("zodiac Year"))document.mainForm.zodiacYear.value = zodiacYear;
+	    if(bWeek = getCookie("Birth Day of Week"))document.mainForm.bWeek.value = bWeek;
+</script>
+
+</script>
+</body>

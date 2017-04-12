@@ -1,0 +1,10 @@
+body{
+	margin-top: 50px;
+	/*color: white;*/
+	font-weight: bold;
+	background: url(https://vkozar.pp.ua/img/bg.jpg) no-repeat center center fixed;
+	background-color: #6495ED;
+	/*background: url(http://www.dhammajak.net/board/files/147_758.jpg) no-repeat center center fixed;*/
+	background-size: cover;
+
+}
